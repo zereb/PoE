@@ -9,6 +9,53 @@
 # Section: League
 # Bestiary
 
+# Legion
+
+# all incubators
+Show
+    Class "Incubator"
+    SetTextColor 255 192 203
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 255 215 0
+    SetFontSize 45
+    PlayAlertSound 1 300
+
+# Betreyal
+
+# incursion
+
+Show
+    BaseType "Stone of Passage"
+    SetTextColor 74 230 58
+    SetBorderColor 74 230 58
+    SetFontSize 45
+
+Show
+    BaseType "Vial of Sacrifice" "Vial of Awakening" "Vial of the Ghost"
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 255 0 0
+    SetFontSize 45
+    PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
+
+Show
+    BaseType "Vial of Consequence" "Vial of Dominance" "Vial of Fate" "Vial of Summoning" "Vial of the Ritual" "Vial of Transcendence"
+    SetTextColor 231 180 120
+    SetBackgroundColor 0 0 0
+    SetBorderColor 231 180 120
+    SetFontSize 45
+
+Show
+    Class "Stackable Currency"
+    BaseType "Prophecy"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 176 93 255
+    SetBorderColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 1 300
+
 # Delve
 
 Show
@@ -18,6 +65,8 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 Show
     Class "Currency"
@@ -28,11 +77,9 @@ Show
     SetFontSize 45
     PlayAlertSound 1 300
 
-# bestiary
-
 Show
     Class "Currency"
-    BaseType "Bestiary Orb" "Imprinted Bestiary Orb" "Thaumaturgical Net" "Strong Steel Net"
+    BaseType "Potent Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Prime Alchemical Resonator" "Prime Chaotic Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
     SetTextColor 0 0 0
     SetBackgroundColor 213 159 0
     SetBorderColor 0 0 0
@@ -40,6 +87,25 @@ Show
     PlayAlertSound 1 300
 
 Show
+    HasExplicitMod "of the Underground" "Subterranean" "of Crafting" "of Spellcraft" "of Weaponcraft"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 136 136 255
+    SetFontSize 45
+    PlayAlertSound 1 300
+
+# bestiary
+
+Show
+    Class "Currency"
+    BaseType "Bestiary Orb" "Imprinted Bestiary Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 213 159 0
+    SetBorderColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 1 300
+
+Hide
     Class "Currency"
     BaseType "Simple Steel Net" "Strong Iron Net" "Reinforced Iron Net" "Simple Iron Net"
     SetTextColor 170 158 130
@@ -60,7 +126,7 @@ Show
     Class "Abyss Jewel"
     SetTextColor 231 180 120
     SetBackgroundColor 0 0 0
-    SetBorderColor 255 255 119
+    SetBorderColor 255 200 0
     SetFontSize 45
 
 Show
@@ -79,6 +145,8 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 Show
     Class "Stackable Currency"
@@ -117,6 +185,8 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 # Section: Top kek
 
@@ -127,6 +197,8 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 Show
     LinkedSockets = 5
@@ -172,6 +244,8 @@ Show
     SetBorderColor 255 0 0
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 Show
     Class "Map Fragments"
@@ -196,6 +270,14 @@ Show
     SetFontSize 45
     PlayAlertSound 6 300
 
+Show
+    Class "Map Fragments"
+    BaseType "Scarab"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 255 255
+    SetFontSize 45
+    PlayAlertSound 6 300
+
 # Section: Maps
 
 Show
@@ -207,7 +289,7 @@ Show
     PlayAlertSound 6 300
 
 Show
-    DropLevel <= 72
+    MapTier >= 1
     Class "Maps"
     SetTextColor 255 255 255
     SetBackgroundColor 0 0 0
@@ -216,7 +298,7 @@ Show
     PlayAlertSound 4 300
 
 Show
-    DropLevel <= 77
+    MapTier >= 6
     Class "Maps"
     SetTextColor 255 255 255
     SetBackgroundColor 0 0 0
@@ -225,6 +307,7 @@ Show
     PlayAlertSound 4 300
 
 Show
+    MapTier = 11
     DropLevel <= 80
     Class "Maps"
     SetTextColor 255 40 0 220
@@ -234,7 +317,7 @@ Show
     PlayAlertSound 4 300
 
 Show
-    DropLevel <= 88
+    MapTier >= 15
     Class "Maps"
     SetTextColor 255 40 0 220
     SetBackgroundColor 0 0 0
@@ -246,16 +329,18 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Mirror of Kalandra" "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather"
+    BaseType "Mirror of Kalandra" "Eternal Orb" "Divine Orb" "Exalted Orb" "Albino Rhoa Feather" "Harbinger's Orb" "Orb of Annulment"
     SetTextColor 255 0 0
     SetBackgroundColor 255 255 255
     SetBorderColor 255 0 0
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 Show
     Class "Currency"
-    BaseType "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Glassblower's Bauble" "Cartographer's Sextant" "Silver Coin" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Master Cartographer" "Journeyman Cartographer" "Stacked Deck"
+    BaseType "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Glassblower's Bauble" "Cartographer's Sextant" "Silver Coin" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Master Cartographer" "Journeyman Cartographer" "Engineer's Orb" "Ancient Orb" "Orb of Binding" "Harbinger's Orb"
     SetTextColor 0 0 0
     SetBackgroundColor 213 159 0
     SetBorderColor 0 0 0
@@ -264,7 +349,7 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Mirror Shard" "Exalted Shard" "Regal Shard"
+    BaseType "Mirror Shard" "Exalted Shard" "Regal Shard" "Annulment Shard"
     SetTextColor 0 0 0
     SetBackgroundColor 213 159 0
     SetBorderColor 0 0 0
@@ -289,9 +374,10 @@ Show
     SetTextColor 170 158 130
     SetFontSize 40
 
-Show
+Hide
     BaseType "Scroll of Wisdom" "Portal Scroll"
     SetTextColor 170 158 130
+    SetFontSize 45
 
 # Section: Essenses
 
@@ -301,7 +387,7 @@ Show
     SetBackgroundColor 249 150 50
     SetBorderColor 0 0 0
     SetFontSize 42
-    PlayAlertSound 2 300
+    PlayAlertSound 1 300
 
 Show
     BaseType "Wailing Essence of" "Screaming Essence of"
@@ -400,6 +486,22 @@ Show
     SetBorderColor 255 215 0
     SetFontSize 45
 
+Show
+    ElderItem True
+    Rarity = Rare
+    SetTextColor 255 255 119
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 127 127 127
+    SetFontSize 45
+
+Show
+    ShaperItem True
+    Rarity = Rare
+    SetTextColor 255 255 119
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 127 127 127
+    SetFontSize 45
+
 # Section: Whites
 
 Show
@@ -418,9 +520,55 @@ Show
     SetBorderColor 255 215 0
     SetFontSize 45
 
+# AXES
 Show
     ItemLevel >= 83
-    BaseType "Vaal Axe" "Coronal Maul" "Ambusher" "Imperial Skean" "Jewelled Foil" "Vaal Rapier" "Corsair Sword" "Eternal Sword" "Imperial Claw" "Hellion's Paw" "Gemini Claw"
+    BaseType "Siege Axe" "Royal Axe" "Fleshripper" "Vaal Axe"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 215 0
+    SetFontSize 45
+
+# CLAWS
+Show
+    ItemLevel >= 83
+    BaseType "Imperial Claw" "Hellion's Paw" "Gemini Claw" "Eye Gouger"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 215 0
+    SetFontSize 45
+
+# MACES
+Show
+    ItemLevel >= 83
+    BaseType "Behemoth Mace" "Coronal Maul"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 215 0
+    SetFontSize 45
+
+# SWORDS
+Show
+    ItemLevel >= 83
+    BaseType "Vaal Blade" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier" "Exquisite Blade" "Reaver Sword"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 215 0
+    SetFontSize 45
+
+# DAGERS
+Show
+    ItemLevel >= 83
+    BaseType "Ambusher" "Imperial Skean" "Sai"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 215 0
+    SetFontSize 45
+
+# WANDS
+Show
+    ItemLevel >= 83
+    BaseType "Imperial Staff"
     SetTextColor 255 255 255
     SetBackgroundColor 0 0 0
     SetBorderColor 255 215 0
@@ -433,6 +581,8 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 30 144 255
     SetFontSize 45
+    PlayAlertSoundPositional 8 300
+    MinimapIcon 0 Blue Circle
 
 Show
     Identified True
@@ -445,23 +595,38 @@ Show
 
 # Section: Chance
 
-Show
+Hide
     Rarity = Normal
-    BaseType "Sorcerer Boots"
-    SetTextColor 255 0 255
+    BaseType "Sorcerer Boots" "Vaal Axe" "Glorious Plate"
+    SetTextColor 255 255 255
     SetBorderColor 255 0 255
     SetFontSize 45
     PlayAlertSound 7 300
 
+# levleing
+
+Hide
+    LinkedSockets >= 4
+    SetBorderColor 255 255 255
+
+Hide
+    BaseType "Quicksilver Flask" "Basalt Flask" "Granite Flask" "Silver Flask"
+    SetBorderColor 74 230 58
+
+Hide
+    Rarity >= Normal
+    BaseType "Rustic Sash"
+    SetBorderColor 255 200 0
+
 # Section: Tryash
 
-Show
+Hide
     Class "Utility Flasks"
     SetBackgroundColor 128 128 128
     SetBorderColor 200 200 200
     SetFontSize 40
 
-Show
+Hide
     Quality >= 15
     Class "Life Flasks" "Hybrid Flasks" "Critical Utility Flasks" "Mana Flasks"
     SetBackgroundColor 128 128 128
@@ -492,7 +657,7 @@ Show
     PlayAlertSound 8 79
 
 Show
-    BaseType "Shaper's Orb"
+    BaseType "Shaper's Orb" "Elder's Orb"
     SetTextColor 74 230 58
     SetBackgroundColor 0 0 0
     SetBorderColor 0 0 0
@@ -509,9 +674,13 @@ Show
     SetFontSize 45
 
 Show
+    Identified True
     Rarity = Rare
 
-Show
+Hide
+    Rarity = Rare
+
+Hide
     Class "Mana Flasks" "Hybrid Flasks" "Life Flasks"
     SetBackgroundColor 127 127 127
     SetFontSize 38
@@ -526,19 +695,14 @@ Show # $rgb, small, lvl
     SetFontSize 38
 
 Hide
-    LinkedSockets >= 3
-
-Hide
-    Sockets >= 4
-
-Hide
     Rarity = Magic
 
 Hide
     Rarity = Normal
 
 Show # SafetyLine!
-    SetTextColor 255 0 255 # TEXTCOLOR: SAFETY LINE
-    SetBorderColor 255 0 255 # BORDERCOLOR: SAFETY LINE
+    SetTextColor 210 0 220 # TEXTCOLOR: SAFETY LINE
+    SetBackgroundColor 210 0 220
+    SetBorderColor 210 0 220 # BORDERCOLOR: SAFETY LINE
     SetFontSize 45
 
