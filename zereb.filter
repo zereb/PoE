@@ -281,15 +281,7 @@ Show
 # Section: Maps
 
 Show
-    Rarity = Unique
-    Class "Maps"
-    SetTextColor 175 96 37
-    SetBorderColor 175 96 37
-    SetFontSize 45
-    PlayAlertSound 6 300
-
-Show
-    MapTier >= 1
+    MapTier <= 5
     Class "Maps"
     SetTextColor 255 255 255
     SetBackgroundColor 0 0 0
@@ -298,6 +290,24 @@ Show
     PlayAlertSound 4 300
 
 Show
+    Rarity = Unique
+    Class "Maps"
+    SetTextColor 175 96 37
+    SetBorderColor 175 96 37
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    MapTier >= 15
+    Class "Maps"
+    SetTextColor 255 40 0 220
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 40 0 220
+    SetFontSize 45
+    PlayAlertSound 4 300
+
+Show
+    MapTier <= 10
     MapTier >= 6
     Class "Maps"
     SetTextColor 255 255 255
@@ -307,21 +317,11 @@ Show
     PlayAlertSound 4 300
 
 Show
-    MapTier = 11
-    DropLevel <= 80
+    MapTier <= 14
     Class "Maps"
     SetTextColor 255 40 0 220
     SetBackgroundColor 0 0 0
     SetBorderColor 0 0 0
-    SetFontSize 45
-    PlayAlertSound 4 300
-
-Show
-    MapTier >= 15
-    Class "Maps"
-    SetTextColor 255 40 0 220
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 40 0 220
     SetFontSize 45
     PlayAlertSound 4 300
 
