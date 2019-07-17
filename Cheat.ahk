@@ -1,5 +1,4 @@
-﻿
-IF NOT A_IsAdmin
+﻿IF NOT A_IsAdmin
 {
    Run *RunAs "%A_ScriptFullPath%"
    ExitApp
@@ -10,15 +9,6 @@ IF NOT A_IsAdmin
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-
-
- 
-IfNotExist, C:\Users\lul\Google Drive\Documents\PoE\AHK
-{
-        FileCreateDir, C:\Users\lul\Google Drive\Documents\PoE\AHK
-}
-
-SetWorkingDir, C:\Users\lul\YandexDisk\Documents\PoE\AHK
 
 IfNotExist, cports.exe
 {
@@ -81,11 +71,3 @@ tabRight(){
 	}
     return
 }
-
-
-
- 
- 
-
-
- 
