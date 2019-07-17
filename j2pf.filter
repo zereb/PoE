@@ -62,7 +62,7 @@ SetBackgroundColor 213 159 0
 SetBorderColor 0 0 0
 
 Show
-BaseType "of the Underground" "Subterranean" "of Crafting" "of Spellcraft" "of Weaponcraft" "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
+HasExplicitMod "of the Underground" "Subterranean" "of Crafting" "of Spellcraft" "of Weaponcraft" "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec"
 PlayAlertSound 9 300
 SetTextColor 255 255 255
 SetFontSize 45
